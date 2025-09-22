@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an Ecommerce project for creating BD Shope Express">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="shortcut icon" href="/Resoce File/shopping.png" type="image/x-icon">
+    <title>BD Shope Express</title>
+</head>
+<body>
+    <!-- navbar start hear -->
+    <i class="fas fa-bars fa-2x" id="menu_icon"></i>
+    <nav id="menu" class="hidden">
+    <ul class="nav_upper flex-space-around">
+    <li class="nav_list"><a href="index.html" class="nav_link">Home</a></li>
+    <li class="nav_list"><a href="register.html" class="nav_link">Registration</a></li>
+    <li class="nav_list"><a href="login.html" class="nav_link">Login</a></li>
+    <li class="nav_list"><a href="index.html" class="nav_link">Logout</a></li>
+    <li class="nav_list"><a href="contact.html" class="nav_link">Contact</a></li>
+    <li class="nav_list"><a href="profile.html" class="nav_link">Profile</a></li>
+    <li class="nav_list"><a href="profile.html" class="nav_link">
+    <img class="profile_icon" src="/Resoce File/BD Shope.png" alt="Profile Icon"></a></li>
+</ul>
+<ul class="nav_lower flex-space-around">
+    <li class="nav_list"><a href="index.html" class="nav_brand nav_link">BD Shope Express</a></li>
+    <li class="nav_list"><a href="cart.html" class="nav_link">
+        <span><i class="fa-solid fa-cart-shopping"></i></span>
+        Cart to Product - $124.40
+    </a></li>
+</ul>
+</nav>
+    <!-- navbar end hear -->
+     <main>
+        <section class="contact_section">
+            <h2 class="section_title text_center">Contact Us</h2>
+            <div class="contact_container flex_center">
+                <form action="#" class="form card">
+                    <div class="form_control flex_center">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required autocomplete="name">
+                    </div>
+                    <div class="form_control flex_center">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required autocomplete="email">
+                    </div>
+                    <div class="form_control flex_center">
+                        <label for="Message">Message:</label>
+                       <textarea name="Message" id="Message"></textarea>
+                    </div>
+                    <div class="form_control flex_center form_btn_field">
+                        <button type="submit" class="btn contact_btn">Submit</button>
+                    </div>
+                </form>
+                <div class="contact_address flex-space-around">
+                    <address>
+                        <h4>Address</h4>
+                        <p>3942 Feni, Sador Hospital Feni</p>
+                        <span>Call:</span>
+                        <a href="tel:(+88)01895284940">+8801895284940</a>
+                    </address>
+                    <iframe class="contact_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.8648049037156!2d91.40172217242367!3d23.02873567008294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3753693349e597ff%3A0x4afc64046bd568c9!2sFeni%20Sadar%20Hospital%20Mor!5e0!3m2!1sen!2sbd!4v1755519193926!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+     </main>
+<!-- footer starts hear -->
+<footer class="Footer flex-space-around">
+    <div class="flex-space-around">
+        <label for="Subscribe">Subscribe To Newsletter:</label>
+        <input type="email" id="Subscribe" name="Subscribe" class="footer_input" placeholder="Your Email Address">
+        <button class="btn btn_Subscribe">Subscribe</button>
+    </div>
+    <div>
+        <p>&copy; Copyright 2025 BD Shope Express. All Right Rserved</p>
+    </div>
+</footer>
+<!-- footer ends hear -->
+ <script src="/Script/index.js"></script>
+</body>
+</html>

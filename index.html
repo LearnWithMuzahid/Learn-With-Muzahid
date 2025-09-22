@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an Ecommerce project for creating BD Shope Express">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="shortcut icon" href="/Resoce File/shopping.png" type="image/x-icon">
+    <link rel="stylesheet" href="/Style/style.css">
+    <title>BD Shope Express</title>
+</head>
+<body>
+    <!-- navbar start hear -->
+    <i class="fas fa-bars fa-2x" id="menu_icon"></i>
+    <nav id="menu" class="hidden">
+    <ul class="nav_upper flex-space-around">
+    <li class="nav_list"><a href="index.html" class="nav_link">Home</a></li>
+    <li class="nav_list"><a href="register.html" class="nav_link">Registration</a></li>
+    <li class="nav_list"><a href="login.html" class="nav_link">Login</a></li>
+    <li class="nav_list"><a href="index.html" class="nav_link">Logout</a></li>
+    <li class="nav_list"><a href="contact.html" class="nav_link">Contact</a></li>
+    <li class="nav_list"><a href="profile.html" class="nav_link">Profile</a></li>
+    <li class="nav_list"><a href="profile.html" class="nav_link">
+    <img class="profile_icon" src="/Resoce File/BD Shope.png" alt="Profile Icon"></a></li>
+</ul>
+<ul class="nav_lower flex-space-around">
+    <li class="nav_list"><a href="index.html" class="nav_brand nav_link">BD Shope Express</a></li>
+    <li class="nav_list"><a href="cart.html" class="nav_link">
+        <span><i class="fa-solid fa-cart-shopping"></i></span>
+        Cart to Product - $124.40
+    </a></li>
+</ul>
+</nav>
+    <!-- navbar end hear -->
+<!-- header starts hear -->
+<header class="header">
+<div class="banner flex-space-around">
+    <marquee class="banner_title">50% Sales Going On </marquee>
+    <div class="features flex-space-around">
+        <article class="feature flex_center">
+            <i class="fa-solid fa-truck feature_icon"></i>
+            <h3>Shopping Within 7 Days </h3>
+        </article>
+        <article class="feature flex_center">
+            <i class="fa-brands fa-rocketchat feature_icon"></i>
+            <h3> Support 24/7</h3>
+        </article>
+        <article class="feature flex_center">
+            <i class="fa-regular fa-credit-card feature_icon"></i>
+            <h3>Safe Payment </h3>
+        </article>
+    </div>
+</div>
+</header>
+<!-- header ends hear -->
+     <main class="flex_center">
+        <div class="sidebar">
+            <section class="categories_section">
+                <h3 class="section_title">Categories</h3>
+                <ul class="list">
+                    <li class="list_item">
+                        <label for="phone">
+                            <input type="checkbox" name="phone" id="phone" value="phone">
+                            Phone
+                        </label>
+                    </li>
+                    <li class="list_item">
+                        <label for="tablets">
+                            <input type="checkbox" name="tablets" id="tablets" value="tablets">
+                            Tablets
+                        </label>
+                    </li>
+                    <li class="list_item">
+                        <label for="television">
+                            <input type="checkbox" name="television" id="television" value="television">
+                            Television
+                        </label>
+                    </li>
+                    <li class="list_item">
+                        <label for="computer">
+                            <input type="checkbox" name="computer" id="computer" value="computer">
+                            Computer
+                        </label>
+                    </li>
+                    <li class="list_item">
+                        <label for="laptop">
+                            <input type="checkbox" name="laptop" id="laptop" value="laptop">
+                            Laptop
+                        </label>
+                    </li>
+                </ul>
+            </section>
+            <section class="price_section">
+                <h3 class="section_title">Price Range</h3>
+                <ul class="list">
+                    <li class="list_item">
+                        <label for="price1">
+                            <input type="radio" name="price1" id="price1" value="[0,20]">
+                            $0-$20
+                        </label>
+                    </li>
+                    <li class="list_item">
+                        <label for="price2">
+                            <input type="radio" name="price2" id="price2" value="[21,50]">
+                            $21-$50
+                        </label>
+                    </li>
+                    <li class="list_item">
+                        <label for="price3">
+                            <input type="radio" name="price3" id="price3" value="[54,100]">
+                            $54-$100
+                        </label>
+                    </li>
+                    <li class="list_item">
+                        <label for="price4">
+                            <input type="radio" name="price4" id="price4" value="[60,120]">
+                            $60-120
+                        </label>
+                    </li>
+                </ul>
+            </section>
+            <section class="shipping_section">
+                <h3 class="section_title">Shipping Option</h3>
+                <ul class="list">
+                    <li class="list_item">
+                        <label for="free">
+                            <input type="radio" name="shipping" id="free" value="free">
+                            Free Shipping
+                        </label>
+                    </li>
+                    <li class="list_item">
+                        <label for="paid">
+                            <input type="radio" name="shipping" id="paid" value="paid">
+                            Paid Shipping
+                        </label>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="Main_Content">
+            <section class="action flex-space-around">
+                <div class="action_sort">
+                    <label for="sort">Sort By:</label>
+                    <select name="sort" id="sort">
+                        <option value="sold">---Select Item---</option>
+                        <option value="sold">Most Sold First</option>
+                        <option value="rating">Most Rated First</option>
+                        <option value="price">Cheapest First</option>
+                        <option value="arrival">Newest Sold First</option>
+                        <option value="discount">Biggest Discount First</option>
+                    </select>
+                </div>
+                <div class="action_search">
+                    <input type="text" placeholder="Search Product">
+                    <button class="btn">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </section>
+            <!-- product section starts hear -->
+            <section class="products">
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in Stock</span>
+                        <hr class="hr_design"/>
+                        <span>3 Sold</span>
+                    </div>
+                    <img class="product_img" src="/Resoce File/product1.jpg" alt="product1">
+                    <div class="product_body">
+                        <h3 class="product_name">Sony v-4 Headphone</h3>
+                        <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <p class="product_description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        At voluptate id quasi neque, reiciendis labore... <a href="product.html" class="learn_more">Learn More</a>
+                    </p>
+                    <h4 class="product_price">$100.50</h4>
+                    <p class="product_rating">Rating: 4.5/5</p>
+                    <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>2 in Stock</span>
+                        <hr class="hr_design"/>
+                        <span>9 Sold</span>
+                    </div>
+                    <img class="product_img" src="/Resoce File/product2.jpg" alt="product2">
+                    <div class="product_body">
+                        <h3 class="product_name">Bata Smart Shoes</h3>
+                        <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <p class="product_description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        At voluptate id quasi neque, reiciendis labore... <a href="product.html" class="learn_more">Learn More</a>
+                    </p>
+                    <h4 class="product_price">$50.80</h4>
+                    <p class="product_rating">Rating: 4.4/2</p>
+                    <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>3 in Stock</span>
+                        <hr class="hr_design"/>
+                        <span>12 Sold</span>
+                    </div>
+                    <img class="product_img" src="/Resoce File/product4.jpg" alt="product3">
+                    <div class="product_body">
+                        <h3 class="product_name">Apple Female Watch</h3>
+                        <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <p class="product_description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        At voluptate id quasi neque, reiciendis labore... <a href="product.html" class="learn_more">Learn More</a>
+                    </p>
+                    <h4 class="product_price">$60.50</h4>
+                    <p class="product_rating">Rating: 4.3/2</p>
+                    <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>4 in Stock</span>
+                        <hr class="hr_design"/>
+                        <span>15 Sold</span>
+                    </div>
+                    <img class="product_img" src="/Resoce File/product5.jpg" alt="product4">
+                    <div class="product_body">
+                        <h3 class="product_name">Apple v-5 HeadPhone</h3>
+                        <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <p class="product_description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        At voluptate id quasi neque, reiciendis labore... <a href="product.html" class="learn_more">Learn More</a>
+                    </p>
+                    <h4 class="product_price">$60.50</h4>
+                    <p class="product_rating">Rating: 4.3/2</p>
+                    <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>6 in Stock</span>
+                        <hr class="hr_design"/>
+                        <span>14 Sold</span>
+                    </div>
+                    <img class="product_img" src="/Resoce File/product6.jpg" alt="product5">
+                    <div class="product_body">
+                        <h3 class="product_name">Apple Smart Camera</h3>
+                        <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <p class="product_description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        At voluptate id quasi neque, reiciendis labore... <a href="product.html" class="learn_more">Learn More</a>
+                    </p>
+                    <h4 class="product_price">$60.50</h4>
+                    <p class="product_rating">Rating: 4.3/2</p>
+                    <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>8 in Stock</span>
+                        <hr class="hr_design"/>
+                        <span>15 Sold</span>
+                    </div>
+                    <img class="product_img" src="/Resoce File/product7.jpg" alt="product6">
+                    <div class="product_body">
+                        <h3 class="product_name">Smart Parfum </h3>
+                        <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <p class="product_description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        At voluptate id quasi neque, reiciendis labore... <a href="product.html" class="learn_more">Learn More</a>
+                    </p>
+                    <h4 class="product_price">$60.50</h4>
+                    <p class="product_rating">Rating: 4.3/2</p>
+                    <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+            </section>
+            <div class="pagination">
+                <button class="btn pagination_button">
+                    <i class="fas fa-less-than"></i>
+                </button>
+                <button class="btn pagination_button">2</button>
+                <button class="btn pagination_button">3</button>
+                <button class="btn pagination_button">4</button>
+                <button class="btn pagination_button">5</button>
+                <button class="btn pagination_button">6</button>
+                <button class="btn pagination_button">7</button>
+                <button class="btn pagination_button">8</button>
+                <button class="btn pagination_button">9</button>
+                <button class="btn pagination_button">10</button>
+                <button class="btn pagination_button">...</button>
+                <button class="btn pagination_button">15</button>
+                 <button class="btn pagination_button">
+                    <i class="fas fa-greater-than"></i>
+                </button>
+            </div>
+            <!-- product section ends hear -->
+        </div>
+     </main>
+<!-- footer starts hear -->
+<footer class="Footer flex-space-around">
+    <div class="flex-space-around">
+        <label for="Subscribe">Subscribe To Newsletter:</label>
+        <input type="email" id="Subscribe" name="Subscribe" class="footer_input" placeholder="Your Email Address">
+        <button class="btn btn_Subscribe">Subscribe</button>
+    </div>
+    <div>
+        <p>&copy; Copyright 2025 BD Shope Express. All Right Rserved</p>
+    </div>
+</footer>
+<!-- footer ends hear -->
+<script src="/Script/index.js"></script>
+</body>
+</html>
